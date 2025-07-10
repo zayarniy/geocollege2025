@@ -100,8 +100,7 @@ new Vue({
     timerTime: 180,
     addTimerTime: 30,
     country: "Начните игру",
-    capital: "",
-    square:"",
+    capital: "",    
     countries: [],
     isCapitalShow: false,    
     continents: ['Африка', 'Азия', 'Австралия и Океания', 'Европа', 'Северная Америка', 'Южная Америка'],
@@ -163,7 +162,7 @@ new Vue({
         randomCountry = getRandomElementAndRemove(this.countries);
         this.country = randomCountry["Страна"];
         this.capital = "Показать";//randomCountry["Столица"];  
-        this.square="";
+
         if (this.isSpeak)
           speak(this.country);
         this.$refs.addTimer.resetTimer(parseInt(document.getElementById("addTimer").value));
@@ -178,7 +177,7 @@ new Vue({
     },
     showCapital() {
       this.capital = randomCountry["Столица"];
-      this.square=randomCountry["Площадь"]
+      
       if (this.isSpeak)
         speak(this.capital);
     },
