@@ -1,0 +1,76 @@
+div
+{
+    #border: 1px red dotted;
+}
+.main-timer {
+
+   
+    font-size: 15vw;
+    #font-size:calc(30vw-1vh);
+    max-width: 100%;
+    text-align: center;
+    user-select: none;
+
+  
+    
+}
+
+.add-timer {
+
+   
+    font-size: 8vw;
+    #font-size:calc(30vw-1vh);
+    max-width: 100%;
+    text-align: center;
+    user-select: none;
+
+  
+    
+}
+
+.two-column-list {
+    column-count: 2; /* Устанавливает количество колонок */
+    column-gap: 20px; /* Расстояние между колонками */
+}
+
+.country
+{
+    font-size: 6vw;
+    max-width: 100%;
+    text-align: center;
+    user-select: none;
+}
+
+.capital
+{
+    font-size: 40px;
+}
+
+
+.hint-container {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.hint-toggle {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+    writing-mode: vertical-rl;
+    #writing-mode: horizontal-tb;
+    text-orientation: mixed;
+}
+
+.hint-content {
+    background-color: #f1f1f1;
+    padding: 20px;
+    width: 300px;
+    display: none;
+}
+
+.score{
+    font-size: 30px;
+}
